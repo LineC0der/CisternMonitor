@@ -5,6 +5,8 @@ water surface which is then convert to the water-level.\
 \
 The motion-sensor **HC-SR-501** is used to activate the LCD only if someone enters the room, where the hardware is located. If the motion stops, the display will be turned off after a certain delay.
 
+![](https://drive.google.com/uc?export=view&id=1rWVFJTq2uzNe4GVFuO-TUnbLrfnNe5cW)
+
 ****
 
 ## Software features
@@ -22,11 +24,12 @@ For the given code, you need the following components:
  - **HC-SR-501**
  - **LCD-20x4**
 
-Further on you should have an mqtt-broker available to publish the data to any device.  
 
 ## How to use
 ### Setup
 Edit *config.cpp* to match your settings. All values and their use are commented in the file.
 
 ### Wiring
-ToDo
+My setup is wired like you see in the picture down below.
+
+![](https://drive.google.com/uc?export=view&id=1ASX2zFWcmLolXgHJnABTHF5zTTexZux_)
