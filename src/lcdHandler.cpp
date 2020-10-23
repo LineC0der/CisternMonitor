@@ -19,12 +19,12 @@ void LcdHandler::setupLcd() {
 
 void LcdHandler::resetText() {
     lcd->clear();
-    lcd->setCursor(0, 0);    
-    lcd->print("> Zisternenmonitor <");
+    lcd->setCursor(0, 0);
+    lcd->print(">  Cisternmonitor  <");
     lcd->setCursor(0, 1);
-    lcd->print("F" + ue + "llmenge:");
+    lcd->print("Level:");
     lcd->setCursor(0, 2);
-    lcd->print("F" + ue + "llstand:");
+    lcd->print("Height:");
 }
 
 void LcdHandler::printOffset(int value, int cntDigits) {
@@ -49,7 +49,7 @@ void LcdHandler::progressBar(int level) {
             level -= cmPerBlock;
         }
         if(level >= cmPerPx) {
-            level /= cmPerPx; 
+            level /= cmPerPx;
             lcd->write(uint8_t(level));
         }
     }
